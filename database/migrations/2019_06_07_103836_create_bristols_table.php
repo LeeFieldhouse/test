@@ -16,7 +16,7 @@ class CreateBristolsTable extends Migration
         Schema::create('bristols', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->bigInteger('parent_id');
+            $table->bigInteger('parent_id')->nullable();
             $table->timestamps();
         });
     }
