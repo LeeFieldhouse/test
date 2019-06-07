@@ -10,7 +10,5 @@ class Bristol extends Model
         return $this->hasMany(Bristol::class, 'parent_id');
     }
 
-    public function subchildren(){
-        return $this->hasMany(Bristol::class, 'parent_id');
-    }
+
 }
