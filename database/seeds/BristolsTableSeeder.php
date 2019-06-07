@@ -12,7 +12,7 @@ class BristolsTableSeeder extends Seeder
      */
     public function run()
     {
-        $bristols = [
+        $places = [
             [
                 'name' => 'Bristol',
                 'parent_id' => null
@@ -33,8 +33,8 @@ class BristolsTableSeeder extends Seeder
         ];
 
 
-        foreach($bristols as $bristol){
-            Bristol::create($bristol);
+        foreach($places as $place){
+            Bristol::create($place);
         }
 
     }
