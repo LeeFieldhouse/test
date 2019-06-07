@@ -18,7 +18,7 @@
                 @foreach ($bristol->children as $child)
                     <li>{{$child->name}}</li>
                     <ul>
-                        @foreach ($child->subchildren as $subchild)
+                        @foreach ($child->children as $subchild)
                             <li>{{$subchild->name}}</li>
                         @endforeach
                     </ul>
